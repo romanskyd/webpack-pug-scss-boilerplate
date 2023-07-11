@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+  block vars
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title #{pageTitle}
+    meta(name='description', content=metaDescription)
+    meta(name='keywords', content=metaKeywords)
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+  body
+    include includes/header.pug
+    main
+      block content
+    include includes/footer.pug
